@@ -1,3 +1,5 @@
+// reusing the code by defining inside the pipeline
+// used audit tools by defining in the line 59 and calling in the line 14 
 pipeline {
     agent any
     parameters {
