@@ -44,7 +44,7 @@ pipeline {
             }
         }
     }
-}
+
 
 String getVersionSuffix() {
     if (params.RC) {
