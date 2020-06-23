@@ -27,7 +27,6 @@ pipeline {
                 echo "this is new test"
               }
             }
-        }
         stage('Smoke Test') {
             steps {
               echo "this is smoke test"
@@ -38,12 +37,12 @@ pipeline {
                 expression { return params.RC }
             } 
             steps {
-                
                 writeFile file: 'publish-results.txt', text: 'published' 
                 archiveArtifacts 'publish-results.txt'
             }
         }
     }
+}
 
 
 String getVersionSuffix() {
